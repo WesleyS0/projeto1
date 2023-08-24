@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spring Boot com 3 Rotas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color: #d1d0cf;
+            background: #161b22;
+        }
+        h3{
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        p{
+            text-align: justify;
+            margin: 5px;
+        }
+        ul{
+            list-style: none;
+            line-height: 1.8;
+        }
+        li{
+            display: inline-block; /* Torna os itens inline para que a borda se ajuste à largura do conteúdo */
+            border-bottom: 1px solid #7615cb;
+        }
+        .conteiner{
+            background: #262e3a;
+            text-align: center;
+            margin-top: 8%;
+            margin-left: 3%;
+            height: 500px;
+            width: 94%;
+            border: 1px solid #d1d0cf;
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1%;
+        }
+        input {
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 15%;
+        }
+        h3,h2,h1,label,li{
+            color: #ffff;
+        }
+        .btn{
+            background-color: #d1eae0;
+            color: #000000;
+            font-size: 1.0rem;
+            height: 25px;
+            width: 57px;
+            border: 1px solid #000;
+        }
+        a{
+            color: #e9e6ef;
+            border: 1px solid #161b22;
+            font-size: 1.2rem;
+            transition-delay: inherit;
+        }
+        a:hover{
+            border: 2px solid #7615cb;
+            font-size: 1.4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Projeto 01 (21/08)</h1>
+        <p>Este projeto é um desafio para a criação de projeto com o Spring Boot, onde devem haver 3 rotas diferentes e pelo menos duas variáveis.<br><br>
+            E pensando nisso, decidimos fazer um sistema de notas, onde o usuário vai entrar com um nome, e duas notas. Dependendo da média, o usuário será levado para "aprovado" ou "reprovado"."<br><br></p>
+        <h4>Esse grupo é composto por:</h4>
+        <ul>
+            <li>Gustavo Becarin</li>
+            <br>
+            <li>Ricardo Beata</li>
+            <br>
+            <li>Wesley Silva</li>
+        </ul>
+        <br><br>
+        <p> Para o inicio do calculo basta cliclar no botão abaixo</p>
+        <br><br>
+        <a href="/recebimentodenotas">Ir para o formulário</a>
+</div>
+</body>
+</html>
